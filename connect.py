@@ -8,8 +8,8 @@ def connect():
         params = config()
         # connect to the PostgreSQL server
         conn = psycopg2.connect(**params)
-        conn.autocommit = True
-        print("CONNECTED")
+        # conn.autocommit = True
+        print("CONNECTED. . . .")
         return conn
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
